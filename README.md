@@ -6,3 +6,5 @@
 
 <h3>Problem 1:</h3>
 <p>You are given a string S. You need to perform basic string compression using the counts of repeated characters. For example if the string is “aabccaaa” the output should be “a2b1c2a3”.</p>
+
+<strong>N.B: The outputs can be seen by opening the html files in a browser and opening the console</strong>
