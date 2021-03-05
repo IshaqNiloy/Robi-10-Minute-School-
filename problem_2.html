@@ -1,0 +1,26 @@
+<script>
+    
+    function stringCompression(strToBeCompressed){
+        str = strToBeCompressed.toLowerCase()
+        result = ""
+        counter = 0
+    
+        //Compresses the string
+        for(i = 0; i < str.length; i++){
+            prev = str[i]
+            next = str[i+1]
+            if(prev == next){
+                counter ++
+            }
+            else{
+                counter ++
+                result += prev + counter
+                counter = 0
+            }
+        }
+        return result
+    }
+    
+    console.log(stringCompression("aabccaaa"))  
+    
+</script>
