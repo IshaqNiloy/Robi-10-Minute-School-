@@ -1,0 +1,76 @@
+<script>
+    
+    function min(arr){
+        rowMax = -10000
+        colMax = -10000
+        temp = 0
+        
+        //Finds the rowMax
+        for(i = 0; i < arr.length; i++){
+            for(j = 0; j < arr.length; j++){
+                temp += arr[i][j]
+            }
+            if(temp > rowMax){
+                rowMax = temp
+               }
+            temp = 0
+        }    
+        
+        //Finds the colMax
+        for(i = 0; i < arr.length; i++){
+            for(j = 0; j < arr.length; j++){
+                temp += arr[j][i]
+            }
+            if(temp > colMax){
+                colMax = temp
+               }
+            temp = 0
+        }
+        
+        //Returns the minimum between rowMax and colMax
+        if(rowMax < colMax){
+            return rowMax
+        }
+        else{
+            return colMax
+        }
+    }
+    
+    item = 1
+    //Created a 1D array
+    input = new Array(3)
+    
+    //Created a 2D array
+    for(i = 0; i < input.length; i++){
+        input[i] = new Array(3)
+    }
+    
+    //Initialized the 2D array with the values from 1 to 9
+    for(i = 0; i < input.length; i++){
+        for(j = 0; j < input.length; j++){
+            input[i][j] = item
+            item++
+        }
+    }
+    
+    console.log(min(input))  
+ 
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
